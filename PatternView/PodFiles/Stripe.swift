@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import UIKit
+
+
+public struct Stripe{
+    var thickness : CGFloat
+    var color : UIColor
+    
+    public init(thickness : CGFloat, color : UIColor){
+        self.thickness = thickness
+        self.color = color
+    }
+    
+}
