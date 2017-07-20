@@ -8,10 +8,15 @@
 
 import UIKit
 
-class ExampleViewController: UIViewController {
+class ExampleViewController: UIViewController
+{
 
+    @IBOutlet weak var myStripeView: StripeView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let stripe1 = Stripe(thickness: 30, color: UIColor(colorLiteralRed: 168/255, green: 188/255, blue: 238/255, alpha: 0.3))
+        let stripe2 = Stripe(thickness: 50, color: UIColor(colorLiteralRed: 168/255, green: 188/255, blue: 238/255, alpha: 0.8))
+        myStripeView.setup(with: [stripe1, stripe2], rotationAngleFromHorizontalInDegrees: 65)
 
         // Do any additional setup after loading the view.
     }

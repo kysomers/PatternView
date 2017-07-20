@@ -12,6 +12,9 @@
 		83F008831F1EEB80004CA0E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F008821F1EEB80004CA0E6 /* Assets.xcassets */; };
 		83F008861F1EEB80004CA0E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F008841F1EEB80004CA0E6 /* LaunchScreen.storyboard */; };
 		83F008901F1EEC2E004CA0E6 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F0088F1F1EEC2E004CA0E6 /* ExampleViewController.swift */; };
+		83F008961F1FA2B6004CA0E6 /* Stripe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F008951F1FA2B6004CA0E6 /* Stripe.swift */; };
+		83F008981F1FA2F5004CA0E6 /* StripeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F008971F1FA2F5004CA0E6 /* StripeView.swift */; };
+		83F0089A1F1FF027004CA0E6 /* UsefulExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F008991F1FF027004CA0E6 /* UsefulExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		83F008851F1EEB80004CA0E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83F008871F1EEB80004CA0E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83F0088F1F1EEC2E004CA0E6 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		83F008951F1FA2B6004CA0E6 /* Stripe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stripe.swift; path = PodFiles/Stripe.swift; sourceTree = "<group>"; };
+		83F008971F1FA2F5004CA0E6 /* StripeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StripeView.swift; path = PodFiles/StripeView.swift; sourceTree = "<group>"; };
+		83F008991F1FF027004CA0E6 /* UsefulExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsefulExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				83F0087B1F1EEB80004CA0E6 /* AppDelegate.swift */,
 				83F0088F1F1EEC2E004CA0E6 /* ExampleViewController.swift */,
 				83F0087F1F1EEB80004CA0E6 /* Main.storyboard */,
+				83F008991F1FF027004CA0E6 /* UsefulExtensions.swift */,
+				83F008971F1FA2F5004CA0E6 /* StripeView.swift */,
+				83F008951F1FA2B6004CA0E6 /* Stripe.swift */,
 				83F008821F1EEB80004CA0E6 /* Assets.xcassets */,
 				83F008841F1EEB80004CA0E6 /* LaunchScreen.storyboard */,
 				83F008871F1EEB80004CA0E6 /* Info.plist */,
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F008961F1FA2B6004CA0E6 /* Stripe.swift in Sources */,
 				83F0087C1F1EEB80004CA0E6 /* AppDelegate.swift in Sources */,
+				83F0089A1F1FF027004CA0E6 /* UsefulExtensions.swift in Sources */,
 				83F008901F1EEC2E004CA0E6 /* ExampleViewController.swift in Sources */,
+				83F008981F1FA2F5004CA0E6 /* StripeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +314,7 @@
 				83F0088C1F1EEB80004CA0E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
