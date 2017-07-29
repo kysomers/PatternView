@@ -15,21 +15,12 @@ public class StripeView: UIView {
     
     public func setup(with stripes : [Stripe], rotationAngleFromHorizontalInDegrees : CGFloat){
         
-        //remove all subviews in case it's getting redrawn
         
         self.clipsToBounds = true
-
-
-        for aView in viewForRotation.subviews{
-            
-            aView.removeFromSuperview()
-        }
-        viewForRotation.removeFromSuperview()
         
-        viewForRotation = UIView()
+        //remove all subviews in case it's getting redrawn
 
-        self.addSubview(viewForRotation)
-        self.sendSubview(toBack: viewForRotation)
+        self.deconstructAndRebuildView()
         
         
         for aStripe in stripes{
@@ -44,7 +35,7 @@ public class StripeView: UIView {
         
         
 
-        
+        //Add in the stripes
         var currentWidthOfStripeStack : CGFloat = 0
 
         while currentWidthOfStripeStack < largestPossibleDimension{
@@ -58,6 +49,8 @@ public class StripeView: UIView {
             }
             
         }
+        
+        //rotate view
         viewForRotation.frame = CGRect(x: 0, y: 0, width: largestPossibleDimension, height: currentWidthOfStripeStack)
         viewForRotation.frame.setCenter(CGPoint(x: self.frame.width / 2, y: self.frame.height / 2))
 
@@ -68,14 +61,21 @@ public class StripeView: UIView {
         
         
     }
+    
+    func deconstructAndRebuildView(){
+        
+        viewForRotation.removeAllSubviews()
+        viewForRotation.removeFromSuperview()
+        
+        viewForRotation = UIView()
+        
+        self.addSubview(viewForRotation)
+        self.sendSubview(toBack: viewForRotation)
 
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
     }
-    */
+    
+    
+
+
 
 }

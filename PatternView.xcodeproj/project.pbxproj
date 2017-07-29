@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831E49F31F2192E50068D3AF /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E49F21F2192E50068D3AF /* Enums.swift */; };
+		8392E8BF1F2C2004003486F8 /* RegularPolkaDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8392E8BE1F2C2004003486F8 /* RegularPolkaDotView.swift */; };
+		83DBBCE01F20704400C57C8F /* PolkaDotExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DBBCDF1F20704400C57C8F /* PolkaDotExampleViewController.swift */; };
 		83F0087C1F1EEB80004CA0E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F0087B1F1EEB80004CA0E6 /* AppDelegate.swift */; };
 		83F008811F1EEB80004CA0E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F0087F1F1EEB80004CA0E6 /* Main.storyboard */; };
 		83F008831F1EEB80004CA0E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F008821F1EEB80004CA0E6 /* Assets.xcassets */; };
@@ -15,9 +18,13 @@
 		83F008961F1FA2B6004CA0E6 /* Stripe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F008951F1FA2B6004CA0E6 /* Stripe.swift */; };
 		83F008981F1FA2F5004CA0E6 /* StripeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F008971F1FA2F5004CA0E6 /* StripeView.swift */; };
 		83F0089A1F1FF027004CA0E6 /* UsefulExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F008991F1FF027004CA0E6 /* UsefulExtensions.swift */; };
+		83F008C01F206C40004CA0E6 /* RandomPolkaDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F008BF1F206C40004CA0E6 /* RandomPolkaDotView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		831E49F21F2192E50068D3AF /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		8392E8BE1F2C2004003486F8 /* RegularPolkaDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegularPolkaDotView.swift; path = PodFiles/RegularPolkaDotView.swift; sourceTree = "<group>"; };
+		83DBBCDF1F20704400C57C8F /* PolkaDotExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolkaDotExampleViewController.swift; sourceTree = "<group>"; };
 		83F008781F1EEB80004CA0E6 /* PatternView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatternView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F0087B1F1EEB80004CA0E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83F008801F1EEB80004CA0E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,6 +35,7 @@
 		83F008951F1FA2B6004CA0E6 /* Stripe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stripe.swift; path = PodFiles/Stripe.swift; sourceTree = "<group>"; };
 		83F008971F1FA2F5004CA0E6 /* StripeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StripeView.swift; path = PodFiles/StripeView.swift; sourceTree = "<group>"; };
 		83F008991F1FF027004CA0E6 /* UsefulExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsefulExtensions.swift; sourceTree = "<group>"; };
+		83F008BF1F206C40004CA0E6 /* RandomPolkaDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomPolkaDotView.swift; path = PodFiles/RandomPolkaDotView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +70,11 @@
 			children = (
 				83F0087B1F1EEB80004CA0E6 /* AppDelegate.swift */,
 				83F0088F1F1EEC2E004CA0E6 /* ExampleViewController.swift */,
+				83DBBCDF1F20704400C57C8F /* PolkaDotExampleViewController.swift */,
 				83F0087F1F1EEB80004CA0E6 /* Main.storyboard */,
+				83F008BF1F206C40004CA0E6 /* RandomPolkaDotView.swift */,
+				8392E8BE1F2C2004003486F8 /* RegularPolkaDotView.swift */,
+				831E49F21F2192E50068D3AF /* Enums.swift */,
 				83F008991F1FF027004CA0E6 /* UsefulExtensions.swift */,
 				83F008971F1FA2F5004CA0E6 /* StripeView.swift */,
 				83F008951F1FA2B6004CA0E6 /* Stripe.swift */,
@@ -147,9 +159,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				83F008961F1FA2B6004CA0E6 /* Stripe.swift in Sources */,
+				83DBBCE01F20704400C57C8F /* PolkaDotExampleViewController.swift in Sources */,
 				83F0087C1F1EEB80004CA0E6 /* AppDelegate.swift in Sources */,
 				83F0089A1F1FF027004CA0E6 /* UsefulExtensions.swift in Sources */,
 				83F008901F1EEC2E004CA0E6 /* ExampleViewController.swift in Sources */,
+				83F008C01F206C40004CA0E6 /* RandomPolkaDotView.swift in Sources */,
+				8392E8BF1F2C2004003486F8 /* RegularPolkaDotView.swift in Sources */,
+				831E49F31F2192E50068D3AF /* Enums.swift in Sources */,
 				83F008981F1FA2F5004CA0E6 /* StripeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

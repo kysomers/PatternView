@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
+enum PolkaDotAmount{
+    case aFew, mediumAmount, lots
+}
+
+enum PolkaDotSize : CGFloat{
+    case small = 10
+    case medium = 20
+    case large = 30
+}
