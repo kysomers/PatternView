@@ -9,11 +9,12 @@
 import UIKit
 
 class PolkaDotExampleViewController: UIViewController {
-    @IBOutlet weak var myPolkaDotView: PolkaDotView!
+    @IBOutlet weak var myPolkaDotView: RegularPolkaDotView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        myPolkaDotView.setup(polkaDotAmount: .mediumAmount, polkaDotSize: .medium, backgroundColor: .blue, dotColor: .red, randomSeed: 5)
+        
+        myPolkaDotView.setup(polkaDotAmount: .lots, polkaDotSize: .large, backgroundColor: .blue, dotColor: .red)
 
         // Do any additional setup after loading the view.
     }
