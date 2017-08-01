@@ -14,7 +14,10 @@ class PolkaDotExampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myPolkaDotView.setup(polkaDotAmount: .lots, polkaDotDiameter: 40, backgroundColor: .blue, dotColor: .red, offset : nil, dotsAreDiagonal: true)
+        let purpleColor = UIColor(colorLiteralRed: 119/255, green: 96/255, blue: 215/255, alpha: 1.0)
+        let orangeColor = UIColor(colorLiteralRed: 255/255, green: 171/255, blue: 82/255, alpha: 1.0)
+        
+        myPolkaDotView.setup(polkaDotAmount: .lots, polkaDotDiameter: 40, backgroundColor: purpleColor, dotColor: orangeColor, offset : nil, dotsAreDiagonal: true)
         
 
         // Do any additional setup after loading the view.

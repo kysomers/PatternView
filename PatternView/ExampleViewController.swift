@@ -11,12 +11,19 @@ import UIKit
 class ExampleViewController: UIViewController
 {
 
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var myStripeView: StripeView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let stripe1 = Stripe(thickness: 30, color: UIColor(colorLiteralRed: 168/255, green: 188/255, blue: 238/255, alpha: 0.3))
-        let stripe2 = Stripe(thickness: 50, color: UIColor(colorLiteralRed: 168/255, green: 188/255, blue: 238/255, alpha: 0.8))
+        let stripe1 = Stripe(thickness: 30, color: UIColor(colorLiteralRed: 120/255, green: 155/255, blue: 255/255, alpha: 0.5))
+        let stripe2 = Stripe(thickness: 50, color: UIColor(colorLiteralRed: 120/255, green: 155/255, blue: 255/255, alpha: 1))
         myStripeView.setup(with: [stripe1, stripe2], rotationAngleFromHorizontalInDegrees: 65)
+        
+        
+        backgroundView.backgroundColor = UIColor(white: 1, alpha: 0.85)
+        backgroundView.layer.cornerRadius = 5
+        backgroundView.clipsToBounds = true
+        
 
         // Do any additional setup after loading the view.
     }

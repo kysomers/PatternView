@@ -71,6 +71,7 @@ public class StripeView: UIView {
         
         self.addSubview(viewForRotation)
         self.sendSubview(toBack: viewForRotation)
+        
 
     }
     

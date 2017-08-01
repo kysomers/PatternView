@@ -10,16 +10,24 @@ import UIKit
 
 class RegularPolkaDotView: UIView {
     
+    var polkaDotHolderView = UIView()
+    
     func setup(polkaDotAmount : PolkaDotAmount, polkaDotDiameter : CGFloat, backgroundColor : UIColor, dotColor : UIColor, offset : CGPoint?, dotsAreDiagonal : Bool){
         
         
-        self.removeAllSubviews()
+        deconstructAndRebuildView()
+        
         self.clipsToBounds = true
  
         
         //Set to 100 to ensure padding
         var xIndex : CGFloat = -100
         var yIndex : CGFloat = -100
+        
+        if let offset = offset{
+            xIndex += offset.x
+            yIndex += offset.y
+        }
         
         self.backgroundColor = backgroundColor
         
@@ -43,10 +51,8 @@ class RegularPolkaDotView: UIView {
             print("here1")
             
             while xIndex < frame.width + 100{
-                
-                
 
-                self.addSubview(makePolkaDotWithCenter(at: CGPoint(x:xIndex, y:yIndex), diameter: polkaDotDiameter, color: dotColor))
+                polkaDotHolderView.addSubview(makePolkaDotWithCenter(at: CGPoint(x:xIndex, y:yIndex), diameter: polkaDotDiameter, color: dotColor))
                 
                 xIndex += spacing
                 
@@ -81,6 +87,20 @@ class RegularPolkaDotView: UIView {
         polkaDotView.layer.cornerRadius = diameter / 2
         
         return polkaDotView
+    }
+    
+    func deconstructAndRebuildView(){
+        
+        polkaDotHolderView.removeAllSubviews()
+        polkaDotHolderView.removeFromSuperview()
+        
+        polkaDotHolderView = UIView()
+        
+        self.addSubview(polkaDotHolderView)
+        self.sendSubview(toBack: polkaDotHolderView)
+        
+        polkaDotHolderView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
+        
     }
 
 }
