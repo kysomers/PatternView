@@ -17,7 +17,7 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 PatternView.xcodeproj/project.xcworkspace/xcuserdata/buzznfrog.xcuserdatad/UserInterfaceState.xcuserstate
-
+PatternView.podspec
 
 ## Other
 *.moved-aside
