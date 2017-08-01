@@ -1,28 +1,23 @@
 //
-//  ExampleViewController.swift
+//  PolkaDotExampleViewController.swift
 //  PatternView
 //
-//  Created by Kyle Somers on 7/18/17.
+//  Created by Kyle Somers on 7/19/17.
 //  Copyright © 2017 Kyle Somers. All rights reserved.
 //
 
 import UIKit
 
-class ExampleViewController: UIViewController
-{
+class PolkaDotExampleViewController: UIViewController {
+    @IBOutlet weak var myPolkaDotView: RegularPolkaDotView!
 
-    @IBOutlet weak var backgroundView: UIView!
-    @IBOutlet weak var myStripeView: StripeView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let stripe1 = Stripe(thickness: 30, color: UIColor(colorLiteralRed: 120/255, green: 155/255, blue: 255/255, alpha: 0.5))
-        let stripe2 = Stripe(thickness: 50, color: UIColor(colorLiteralRed: 120/255, green: 155/255, blue: 255/255, alpha: 1))
-        myStripeView.setup(with: [stripe1, stripe2], rotationAngleFromHorizontalInDegrees: 65)
         
+        let purpleColor = UIColor(colorLiteralRed: 119/255, green: 96/255, blue: 215/255, alpha: 1.0)
+        let orangeColor = UIColor(colorLiteralRed: 255/255, green: 171/255, blue: 82/255, alpha: 1.0)
         
-        backgroundView.backgroundColor = UIColor(white: 1, alpha: 0.85)
-        backgroundView.layer.cornerRadius = 5
-        backgroundView.clipsToBounds = true
+        myPolkaDotView.setup(polkaDotAmount: .lots, polkaDotDiameter: 40, backgroundColor: purpleColor, dotColor: orangeColor, offset : nil, dotsAreDiagonal: true)
         
 
         // Do any additional setup after loading the view.
