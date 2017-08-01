@@ -1,9 +1,6 @@
-# PatternView
+<img src="http://i.imgur.com/XKDvhvW.png" width="1000">
 
 PatternView is a suite of views which can be used to easily implement certain patterns to create more aesthetically pleasing apps. The idea behind this is that especially for new developers who don't have their own designers, there's a lot if iteration involved in making good looking views, and for them it might be a lot easier to tweak a number than to go back and make half of the stripes in a view to be a slightly different shade of blue. This is about making iteration and design easy for developers. I'll be adding more views in the future.
-
-
-<img src="http://i.imgur.com/FSdk7kE.png" width="250">
 
 
 ## Use
@@ -11,6 +8,8 @@ PatternView is a suite of views which can be used to easily implement certain pa
 You can use PatternView in any file by writing `import ButtonWheel` in that file.
 
 #### StripeView
+
+<img src="http://i.imgur.com/6QW8uRD.png" width="250">
 
 `init?(coder aDecoder: NSCoder)` or `override init(frame: CGRect) `
 
