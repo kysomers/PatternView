@@ -7,7 +7,7 @@ PatternView is a suite of views which can be used to easily implement certain pa
 
 You can use PatternView in any file by writing `import PatternView` in that file.
 
-`init?(coder aDecoder: NSCoder)` or `override init(frame: CGRect) `
+`public init?(coder aDecoder: NSCoder)` or `override init(frame: CGRect) `
 
 PatternViews inherit from UIView. They can be instantiated either in storyboard or programmatically with the methods above from its superclass.
 
@@ -17,7 +17,7 @@ PatternViews inherit from UIView. They can be instantiated either in storyboard 
 
 ### StripeView
 
-`class StripeView : UIView`
+`public class StripeView : UIView`
 
 `func setup(with stripes : [Stripe], rotationAngleFromHorizontalInDegrees : CGFloat)`
 
@@ -25,18 +25,19 @@ Hand `stripes` an array of stripes. It will repeat these stripes to cover the en
 
 ##### Stripe
 
-`class Stripe`
+`public class Stripe`
+
+`public init(thickness : CGFloat, color : UIColor)`
+
+Use this init to set the thickness and color of each stripe when you instantiate it.
 
 
 
-
-
-
-<img src="http://http://i.imgur.com/kD37Y20.png" width="250">
+<img src="http://i.imgur.com/kD37Y20.png" width="250">
 
 ### RegularPolkaDotView
 
-`class RegularPolkaDotView : UIView`
+`public class RegularPolkaDotView : UIView`
 
 `func setup(polkaDotAmount : PolkaDotAmount, polkaDotDiameter : CGFloat, backgroundColor : UIColor, dotColor : UIColor, offset : CGPoint?, dotsAreDiagonal : Bool)`
 
