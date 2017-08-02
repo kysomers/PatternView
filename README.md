@@ -2,6 +2,11 @@
 
 PatternView is a suite of views which can be used to easily implement certain patterns to create more aesthetically pleasing apps. The idea behind this is that especially for new developers who don't have their own designers, there's a lot if iteration involved in making good looking views, and for them it might be a lot easier to tweak a number than to go back and make half of the stripes in a view to be a slightly different shade of blue. This is about making iteration and design easy for developers. I'll be adding more views in the future.
 
+<br>
+<br>
+<br>
+<br>
+
 
 # Use
 
@@ -11,11 +16,17 @@ You can use PatternView in any file by writing `import PatternView` in that file
 
 PatternViews inherit from UIView. They can be instantiated either in storyboard or programmatically with the methods above from its superclass.
 
+<br>
+<br>
+<br>
+<br>
+
+
+## StripeView
 
 
 <img src="http://i.imgur.com/6QW8uRD.png" width="250">
 
-### StripeView
 
 `public class StripeView : UIView`
 
@@ -23,7 +34,7 @@ PatternViews inherit from UIView. They can be instantiated either in storyboard 
 
 Hand `stripes` an array of stripes. It will repeat these stripes to cover the entire screen. `rotationAngleFromHorizontalInDegrees` will rotate the stripes ot whatever angle you want. An input of 0 will give horizontal stripes, and an input of 90 will give vertical stripes.
 
-##### Stripe
+#### Stripe
 
 `public class Stripe`
 
@@ -31,11 +42,16 @@ Hand `stripes` an array of stripes. It will repeat these stripes to cover the en
 
 Use this init to set the thickness and color of each stripe when you instantiate it.
 
+<br>
+<br>
+<br>
+<br>
 
+
+## RegularPolkaDotView
 
 <img src="http://i.imgur.com/kD37Y20.png" width="250">
 
-### RegularPolkaDotView
 
 `public class RegularPolkaDotView : UIView`
 
