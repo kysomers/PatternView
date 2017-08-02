@@ -10,11 +10,13 @@ PatternView is a suite of views which can be used to easily implement certain pa
 
 # Use
 
+Put this into your project by adding `pod 'PatternView'` into your podfile. If it can't find the module, try running `pod update`
+
 You can use PatternView in any file by writing `import PatternView` in that file.
 
 `public init?(coder aDecoder: NSCoder)` or `override init(frame: CGRect) `
 
-PatternViews inherit from UIView. They can be instantiated either in storyboard or programmatically with the methods above from its superclass.
+PatternViews inherit from UIView. They can be instantiated either in storyboard or programmatically with the methods above from its superclass. If you do install it in Storyboard, when you set the custom class for the UIView, make sure the 'Module' field says 'PatternView.'
 
 <br>
 <br>
